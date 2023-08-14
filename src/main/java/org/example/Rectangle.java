@@ -15,4 +15,10 @@ public class Rectangle {
     public double diagonal(){
         return Math.sqrt((Math.pow(2,width)+ Math.pow(2,height)));
     }
+
+    public String toString(){
+        return "AREA = "+ area()
+                +"\nPERIMETER = " + perimeter()
+                +"\nDIAGONAL = " + String.format("%,2f",diagonal());
+    }
 }

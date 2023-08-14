@@ -6,6 +6,7 @@ package org.example;
 * Realizar uma saída no estoque e mostrar novamente os dados do produto.*/
 
 
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -24,10 +25,16 @@ public class Main {
         System.out.print("Quantity: ");
         product.quantity = sc.nextInt();
 
-        System.out.println(product.name + ", "+product.price + ", "+product.quantity);
+        System.out.println();
+        System.out.println(product.toString());
 
+        System.out.print("Enter the number of products to be added in stock: ");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
+
+        System.out.println();
+        System.out.println("Uptade data: " +product.toString());
 
         sc.close();
-
     }
 }

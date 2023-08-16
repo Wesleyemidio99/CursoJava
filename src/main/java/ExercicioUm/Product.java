@@ -1,4 +1,4 @@
-package org.example;
+package ExercicioUm;
 
 public class Product {
     public String name;

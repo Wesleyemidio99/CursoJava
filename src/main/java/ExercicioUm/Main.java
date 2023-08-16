@@ -1,4 +1,4 @@
-package org.example;
+package ExercicioUm;
 
 /*Fazer um programa para ler os dados de um produto em estoque (nome,preço e quantidade em estoque). Em seguida:
 * Mostrar os dados dos produtos(nome,preço, quantidade em estoque, valor total no estoque).
